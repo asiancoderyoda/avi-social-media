@@ -1,0 +1,170 @@
+.login{
+    width: 80vw;
+    height: 100vh;
+    text-align: center;
+    display: grid;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.login > img {
+    object-fit: contain;
+    height: 150px;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.login > form {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.login > form > h2{
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.login > form > input {
+    width: 350px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 2px 4px 10px gray;
+}
+
+.login > form > input:hover {
+    background-color: white;
+    box-shadow: none;
+}
+
+.login > form > button {
+    width: 350px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 2px 4px 10px gray;
+    background-color: #005cb8;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.register__button{
+    width: 350px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 2px 4px 10px gray;
+    background-color: #005cb8;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: auto;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.login > form > button:hover {
+    background-color: white;
+    color: #005cb8;
+}
+
+.register__button:hover{
+    background-color: white;
+    color: #005cb8;
+}
+
+.login__register {
+    color: #005cb8;
+    cursor: pointer;
+}
+
+.login__register:hover {
+    color: #00b2b8;
+}
+
+.login__links > p{
+    margin-top: 20px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width:720px){
+    .login > form > button{
+        max-width: 240px;
+    }
+    .register__button{
+        max-width: 240px;
+    }
+    .login > form > input{
+        max-width: 240px;
+    }
+    .login > img {
+        margin-top: -60px;
+    }
+}
+
+
+#image__upload{
+    border-bottom: 2px solid #005cb8;
+    box-shadow: none !important;
+    border-radius: 0;
+    padding: 5px;
+}
+
+
+.file {
+    opacity: 0;
+    width: 0.1px;
+    height: 0.1px;
+    position: absolute;
+  }
+  
+  .file-input label {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    border-radius: 25px;
+    background: linear-gradient(40deg,#ff6ec4,#7873f5);
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform .2s ease-out;
+  }
+  
+  .file-name {
+    position: absolute;
+    bottom: -35px;
+    left: 10px;
+    font-size: 0.85rem;
+    color: #555;
+  }
+  
+  input:hover + label,
+  input:focus + label {
+    transform: scale(1.02);
+  }
+  
+  /* Adding an outline to the label on focus */
+  input:focus + label {
+    outline: 1px solid #000;
+    outline: -webkit-focus-ring-color auto 2px;
+  }
